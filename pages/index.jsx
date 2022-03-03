@@ -1,7 +1,6 @@
-import Head from "next/head"
 import { styled } from "@b2list/config/stitches.config"
 import { FormattedMessage } from "react-intl"
-import StitchesLogo from "../src/icons/Logo"
+import StitchesLogo from "@b2list/icons/Logo"
 import Button from "@b2list/components/Button"
 import Link from "next/link"
 
@@ -33,10 +32,7 @@ const Container = styled('div', {
 
 export default function Home() {
   return (
-    <Box css={{ paddingY: '$6' }}>      
-      <Head>
-        <title>Use Stitches with Next.js</title>
-      </Head>
+    <Box css={{ paddingY: '$6' }}>            
       <Container size={{ '@initial': '1', '@bp1': '2' }}>
         <StitchesLogo />
         <Text as="h1">

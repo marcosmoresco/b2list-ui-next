@@ -1,4 +1,7 @@
+import { useIntl } from "react-intl";
+
 export default function Register() {
-    return <div>Register</div>;
+  const int = useIntl();
+
+  return <div>{int.formatMessage({ id: "register" })}</div>;
 }
-  

@@ -22,7 +22,8 @@
     "paths": {
       "@b2list/*": ["./src/*"],   
       "@b2list/config/*": ["./src/config/*"],  
-      "@b2list/components/*": ["./src/components/*"],  
+      "@b2list/components/*": ["./src/components/*"], 
+      "@b2list/icons/*": ["./src/icons/*"], 
     }
   },
   "include": [    
