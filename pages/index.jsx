@@ -1,7 +1,7 @@
 import Head from "next/head"
 import { styled } from "@b2list/config/stitches.config"
 import { FormattedMessage } from "react-intl"
-import StitchesLogo from "../components/StitchesLogo"
+import StitchesLogo from "../src/icons/Logo"
 import Button from "@b2list/components/Button"
 import Link from "next/link"
 
