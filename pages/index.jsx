@@ -39,7 +39,9 @@ export default function Home() {
       </Head>
       <Container size={{ '@initial': '1', '@bp1': '2' }}>
         <StitchesLogo />
-        <Text as="h1">Hello, from Stitches.</Text>        
+        <Text as="h1">
+          <FormattedMessage id="home.text" />  
+        </Text>        
       </Container>
       <Link href="/register">
         <Button color="primary">

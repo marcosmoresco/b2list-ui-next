@@ -1,23 +1,22 @@
-import React from "react";
 import Head from "next/head";
-import { IntlProvider } from "react-intl";
 import { useRouter } from "next/router";
-import Layout from "../src/Layout";
+import React from "react";
+import { IntlProvider } from "react-intl";
 
+import Layout from "../src/Layout";
 import messages_en from "../src/locales/en.json";
 import messages_pt from "../src/locales/pt.json";
 
-
 export type LocalesType = {
-  [key: string]: any
-}
+  [key: string]: any;
+};
 
 const messages: LocalesType = {
   en: {
-    ...messages_en,    
+    ...messages_en,
   },
   pt: {
-    ...messages_pt,    
+    ...messages_pt,
   },
 };
 
@@ -35,25 +34,25 @@ function App(props: any) {
   }, []);
 
   return (
-    <React.Fragment>
+    <>
       <Head>
-        <title>Blazon Workspace</title>
+        <title>b2list</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
-        />       
+        />
       </Head>
-      
+
       <IntlProvider
         locale={locale}
         defaultLocale={defaultLocale}
         messages={messages[locale]}
-      >       
+      >
         <Layout>
           <Component {...pageProps} />
         </Layout>
-      </IntlProvider>     
-    </React.Fragment>
+      </IntlProvider>
+    </>
   );
 }
 
