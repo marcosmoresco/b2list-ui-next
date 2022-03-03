@@ -1,5 +1,8 @@
 {
     "home.text": "Hello, from Stitches!",
     "go.register": "Go register",
-    "register": "Register"
+    "register": "Register",
+    "firstName": "First name",
+    "middleName": "Middle name",
+    "lastName": "Last name"
 }

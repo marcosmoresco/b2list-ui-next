@@ -1,17 +1,18 @@
-import React, { FC } from "react";
+import Header from "@b2list/components/Header";
 import { styled } from "@b2list/config/stitches.config";
+import React, { FC } from "react";
 
-const Box = styled('div', {});
+const Box = styled("div", {});
 
-export type LayoutProps = {
+type LayoutProps = {
   children: React.ReactNode;
 };
 
 const Layout: FC<LayoutProps> = ({ children }) => {
-  
   return (
-    <Box>             
-        {children}                    
+    <Box>
+      <Header />
+      {children}
     </Box>
   );
 };

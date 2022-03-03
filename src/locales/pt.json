@@ -1,5 +1,8 @@
 {
     "home.text": "Olá, da Stitches!",
     "go.register": "Ir para cadastro",
-    "register": "Cadastro"
+    "register": "Cadastrar",
+    "firstName": "Primeiro nome",
+    "middleName": "Nome do meio",
+    "lastName": "Último nome"
 }

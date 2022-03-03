@@ -1,10 +1,11 @@
 import { styled } from "@b2list/config/stitches.config"
 import { FormattedMessage } from "react-intl"
-import StitchesLogo from "@b2list/icons/Logo"
 import Button from "@b2list/components/Button"
 import Link from "next/link"
 
-const Box = styled('div', {})
+const Box = styled('div', {
+  margin: 10
+})
 
 const Text = styled('p', {
   fontFamily: '$system',
@@ -33,8 +34,7 @@ const Container = styled('div', {
 export default function Home() {
   return (
     <Box css={{ paddingY: '$6' }}>            
-      <Container size={{ '@initial': '1', '@bp1': '2' }}>
-        <StitchesLogo />
+      <Container size={{ '@initial': '1', '@bp1': '2' }}>        
         <Text as="h1">
           <FormattedMessage id="home.text" />  
         </Text>        
