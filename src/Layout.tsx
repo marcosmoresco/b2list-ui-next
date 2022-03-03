@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { styled } from "@b2list/config/stitches.config"
+import { styled } from "@b2list/config/stitches.config";
 
 const Box = styled('div', {})
 
